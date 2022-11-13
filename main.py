@@ -1,7 +1,8 @@
 import re
 import csv
 
-def readCSV() -> tuple[list[str], list[str]]:
+
+def readCSV() ->list :
     column1 = []
     column2 = []
 
@@ -13,8 +14,9 @@ def readCSV() -> tuple[list[str], list[str]]:
 
     return column1, column2
 
-#test
-def saveCSV(result: list[list[str]], file: str):
+
+# test
+def saveCSV(result:list, file: str):
     rows = zip(result[0], result[1], result[2], result[3], result[4], result[5], result[6], result[7], result[8],
                result[9])
 
